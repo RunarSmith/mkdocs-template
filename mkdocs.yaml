@@ -1,7 +1,7 @@
 site_name: Runar Smith Notes
 site_description: 'Runar Smith Notes'
 
-dev_addr: 127.0.0.1:8000
+dev_addr: 0.0.0.0:8000
 
 theme:
   # https://squidfunk.github.io/mkdocs-material/
@@ -49,7 +49,7 @@ extra:
     provider: mike
 
 extra_css:
-  - assets/custom.css
+  - css/custom.css
 
 markdown_extensions:
   - def_list
