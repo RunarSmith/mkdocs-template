@@ -1,0 +1,73 @@
+site_name: Runar Smith Notes
+site_description: 'Runar Smith Notes'
+
+dev_addr: 127.0.0.1:8000
+
+theme:
+  # https://squidfunk.github.io/mkdocs-material/
+  name: material
+  color_mode: auto
+  user_color_mode_toggle: true
+  # icon:
+  #  repo: fontawesome/brands/github
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - content.code.copy
+    - content.action.view
+    - content.tooltips
+
+    - navigation.tracking
+
+    # Button to navigate to the top of the page
+    - navigation.top
+
+    # Top tab bar
+    - navigation.tabs
+
+    # - navigation.sections
+
+    - search.share
+    - search.suggest
+    - search.highlight
+
+extra:
+  version:
+    provider: mike
+
+extra_css:
+  - assets/custom.css
+
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - admonition
+
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+
+plugins:
+  - search
+
+exclude_docs: |
+
