@@ -44,14 +44,23 @@ theme:
     - search.suggest
     - search.highlight
 
-extra:
-  version:
-    provider: mike
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.path
+
+#extra:
+#  version:
+#    provider: mike
 
 extra_css:
   - css/custom.css
 
 markdown_extensions:
+  - abbr
+  - admonition
+  
+  - footnotes
+
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -65,6 +74,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - attr_list
+
+  - toc:
+      permalink: true
 
 plugins:
   - search
